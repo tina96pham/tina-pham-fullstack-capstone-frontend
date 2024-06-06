@@ -63,7 +63,7 @@ List endpoints that your server will implement, including HTTP methods, paramete
 
 ### Auth
 
-Auth will be a nice to have feature, allowing users to securely acces their waste logger and personal dashboard. With secure access, users can manage their data, monitor their progress, and engage with community features, all while maintaining the privacy and integrity of their information. Authentication will be a simple system that uses JWT to encode user information and store it in session storage, protecting user privacy.
+Auth will be a nice to have feature, allowing users to securely access their waste logger and personal dashboard. With secure access, users can manage their data, monitor their progress, and engage with community features, all while maintaining the privacy and integrity of their information. Authentication will be a simple system that uses JWT to encode user information and store it in session storage, protecting user privacy.
 
 
 ## Roadmap
