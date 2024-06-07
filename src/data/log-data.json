@@ -1,0 +1,1002 @@
+[
+  {
+      "id": 1,
+      "intakeDate": "2022-12-19T05:00:00.000Z",
+      "disposalDate": "2022-12-28T05:00:00.000Z",
+      "productName": "Plastic Bottles",
+      "type": "Plastic",
+      "quantity": 3,
+      "landfillContribution": 600,
+      "cmi": "0.50"
+  },
+  {
+      "id": 4,
+      "intakeDate": "2022-09-14T04:00:00.000Z",
+      "disposalDate": "2022-09-22T04:00:00.000Z",
+      "productName": "Plastic Packaging (e.g., Wrappers)",
+      "type": "Plastic",
+      "quantity": 7,
+      "landfillContribution": 350,
+      "cmi": "0.10"
+  },
+  {
+      "id": 6,
+      "intakeDate": "2022-07-25T04:00:00.000Z",
+      "disposalDate": "2022-07-27T04:00:00.000Z",
+      "productName": "Plastic Water Bottles",
+      "type": "Plastic",
+      "quantity": 3,
+      "landfillContribution": 600,
+      "cmi": "0.50"
+  },
+  {
+      "id": 10,
+      "intakeDate": "2022-01-02T05:00:00.000Z",
+      "disposalDate": "2022-01-16T05:00:00.000Z",
+      "productName": "Plastic Packaging (e.g., Wrappers)",
+      "type": "Plastic",
+      "quantity": 5,
+      "landfillContribution": 250,
+      "cmi": "0.10"
+  },
+  {
+      "id": 13,
+      "intakeDate": "2022-02-12T05:00:00.000Z",
+      "disposalDate": "2022-02-14T05:00:00.000Z",
+      "productName": "Plastic Sachets",
+      "type": "Plastic",
+      "quantity": 2,
+      "landfillContribution": 20,
+      "cmi": "0.01"
+  },
+  {
+      "id": 16,
+      "intakeDate": "2022-03-04T05:00:00.000Z",
+      "disposalDate": "2022-03-06T05:00:00.000Z",
+      "productName": "Plastic Grocery Bags",
+      "type": "Plastic",
+      "quantity": 2,
+      "landfillContribution": 200,
+      "cmi": "0.10"
+  },
+  {
+      "id": 17,
+      "intakeDate": "2022-03-20T04:00:00.000Z",
+      "disposalDate": "2022-04-01T04:00:00.000Z",
+      "productName": "Plastic Beverage Rings",
+      "type": "Plastic",
+      "quantity": 9,
+      "landfillContribution": 135,
+      "cmi": "0.05"
+  },
+  {
+      "id": 19,
+      "intakeDate": "2022-03-19T04:00:00.000Z",
+      "disposalDate": "2022-03-24T04:00:00.000Z",
+      "productName": "Plastic Bags",
+      "type": "Plastic",
+      "quantity": 5,
+      "landfillContribution": 500,
+      "cmi": "0.10"
+  },
+  {
+      "id": 20,
+      "intakeDate": "2022-04-10T04:00:00.000Z",
+      "disposalDate": "2022-04-22T04:00:00.000Z",
+      "productName": "Plastic Food Containers",
+      "type": "Plastic",
+      "quantity": 8,
+      "landfillContribution": 1200,
+      "cmi": "0.50"
+  },
+  {
+      "id": 21,
+      "intakeDate": "2022-08-09T04:00:00.000Z",
+      "disposalDate": "2022-08-19T04:00:00.000Z",
+      "productName": "Styrofoam (Polystyrene) Cups",
+      "type": "Plastic",
+      "quantity": 5,
+      "landfillContribution": 250,
+      "cmi": "0.01"
+  },
+  {
+      "id": 24,
+      "intakeDate": "2022-03-26T04:00:00.000Z",
+      "disposalDate": "2022-04-03T04:00:00.000Z",
+      "productName": "Plastic Cups",
+      "type": "Plastic",
+      "quantity": 1,
+      "landfillContribution": 80,
+      "cmi": "0.40"
+  },
+  {
+      "id": 27,
+      "intakeDate": "2022-12-17T05:00:00.000Z",
+      "disposalDate": "2022-12-18T05:00:00.000Z",
+      "productName": "Plastic Food Containers",
+      "type": "Plastic",
+      "quantity": 7,
+      "landfillContribution": 1050,
+      "cmi": "0.50"
+  },
+  {
+      "id": 31,
+      "intakeDate": "2022-08-17T04:00:00.000Z",
+      "disposalDate": "2022-08-25T04:00:00.000Z",
+      "productName": "Plastic Plates",
+      "type": "Plastic",
+      "quantity": 7,
+      "landfillContribution": 280,
+      "cmi": "0.05"
+  },
+  {
+      "id": 32,
+      "intakeDate": "2022-06-24T04:00:00.000Z",
+      "disposalDate": "2022-06-25T04:00:00.000Z",
+      "productName": "Plastic Lids",
+      "type": "Plastic",
+      "quantity": 2,
+      "landfillContribution": 40,
+      "cmi": "0.30"
+  },
+  {
+      "id": 42,
+      "intakeDate": "2022-12-27T05:00:00.000Z",
+      "disposalDate": "2022-12-28T05:00:00.000Z",
+      "productName": "Plastic Food Containers",
+      "type": "Plastic",
+      "quantity": 8,
+      "landfillContribution": 1200,
+      "cmi": "0.50"
+  },
+  {
+      "id": 44,
+      "intakeDate": "2022-04-11T04:00:00.000Z",
+      "disposalDate": "2022-04-24T04:00:00.000Z",
+      "productName": "Plastic Plates",
+      "type": "Plastic",
+      "quantity": 3,
+      "landfillContribution": 120,
+      "cmi": "0.05"
+  },
+  {
+      "id": 46,
+      "intakeDate": "2022-07-03T04:00:00.000Z",
+      "disposalDate": "2022-07-07T04:00:00.000Z",
+      "productName": "Plastic Cups",
+      "type": "Plastic",
+      "quantity": 6,
+      "landfillContribution": 480,
+      "cmi": "0.40"
+  },
+  {
+      "id": 50,
+      "intakeDate": "2022-07-08T04:00:00.000Z",
+      "disposalDate": "2022-07-09T04:00:00.000Z",
+      "productName": "Plastic Plates",
+      "type": "Plastic",
+      "quantity": 4,
+      "landfillContribution": 160,
+      "cmi": "0.05"
+  },
+  {
+      "id": 51,
+      "intakeDate": "2022-01-21T05:00:00.000Z",
+      "disposalDate": "2022-02-04T05:00:00.000Z",
+      "productName": "Plastic Sachets",
+      "type": "Plastic",
+      "quantity": 10,
+      "landfillContribution": 100,
+      "cmi": "0.01"
+  },
+  {
+      "id": 61,
+      "intakeDate": "2022-01-09T05:00:00.000Z",
+      "disposalDate": "2022-01-16T05:00:00.000Z",
+      "productName": "Plastic Food Containers",
+      "type": "Plastic",
+      "quantity": 8,
+      "landfillContribution": 1200,
+      "cmi": "0.50"
+  },
+  {
+      "id": 62,
+      "intakeDate": "2022-12-27T05:00:00.000Z",
+      "disposalDate": "2023-01-10T05:00:00.000Z",
+      "productName": "Plastic Sachets",
+      "type": "Plastic",
+      "quantity": 4,
+      "landfillContribution": 40,
+      "cmi": "0.01"
+  },
+  {
+      "id": 63,
+      "intakeDate": "2022-10-24T04:00:00.000Z",
+      "disposalDate": "2022-10-26T04:00:00.000Z",
+      "productName": "Plastic Lids",
+      "type": "Plastic",
+      "quantity": 3,
+      "landfillContribution": 60,
+      "cmi": "0.30"
+  },
+  {
+      "id": 66,
+      "intakeDate": "2022-04-19T04:00:00.000Z",
+      "disposalDate": "2022-05-02T04:00:00.000Z",
+      "productName": "Milk Jugs",
+      "type": "Plastic",
+      "quantity": 1,
+      "landfillContribution": 300,
+      "cmi": "0.60"
+  },
+  {
+      "id": 68,
+      "intakeDate": "2022-06-24T04:00:00.000Z",
+      "disposalDate": "2022-07-06T04:00:00.000Z",
+      "productName": "Plastic Bags",
+      "type": "Plastic",
+      "quantity": 7,
+      "landfillContribution": 700,
+      "cmi": "0.10"
+  },
+  {
+      "id": 71,
+      "intakeDate": "2022-10-07T04:00:00.000Z",
+      "disposalDate": "2022-10-18T04:00:00.000Z",
+      "productName": "Plastic Cutlery",
+      "type": "Plastic",
+      "quantity": 6,
+      "landfillContribution": 180,
+      "cmi": "0.05"
+  },
+  {
+      "id": 76,
+      "intakeDate": "2022-06-16T04:00:00.000Z",
+      "disposalDate": "2022-06-25T04:00:00.000Z",
+      "productName": "Plastic Cutlery",
+      "type": "Plastic",
+      "quantity": 6,
+      "landfillContribution": 180,
+      "cmi": "0.05"
+  },
+  {
+      "id": 79,
+      "intakeDate": "2022-07-23T04:00:00.000Z",
+      "disposalDate": "2022-07-27T04:00:00.000Z",
+      "productName": "Plastic Beverage Rings",
+      "type": "Plastic",
+      "quantity": 4,
+      "landfillContribution": 60,
+      "cmi": "0.05"
+  },
+  {
+      "id": 80,
+      "intakeDate": "2022-02-16T05:00:00.000Z",
+      "disposalDate": "2022-02-28T05:00:00.000Z",
+      "productName": "Styrofoam (Polystyrene) Cups",
+      "type": "Plastic",
+      "quantity": 10,
+      "landfillContribution": 500,
+      "cmi": "0.01"
+  },
+  {
+      "id": 82,
+      "intakeDate": "2022-01-15T05:00:00.000Z",
+      "disposalDate": "2022-01-27T05:00:00.000Z",
+      "productName": "Plastic Beverage Rings",
+      "type": "Plastic",
+      "quantity": 8,
+      "landfillContribution": 120,
+      "cmi": "0.05"
+  },
+  {
+      "id": 83,
+      "intakeDate": "2022-12-12T05:00:00.000Z",
+      "disposalDate": "2022-12-15T05:00:00.000Z",
+      "productName": "Plastic Food Containers",
+      "type": "Plastic",
+      "quantity": 6,
+      "landfillContribution": 900,
+      "cmi": "0.50"
+  },
+  {
+      "id": 84,
+      "intakeDate": "2022-03-02T05:00:00.000Z",
+      "disposalDate": "2022-03-13T05:00:00.000Z",
+      "productName": "Plastic Cups",
+      "type": "Plastic",
+      "quantity": 10,
+      "landfillContribution": 800,
+      "cmi": "0.40"
+  },
+  {
+      "id": 93,
+      "intakeDate": "2022-07-08T04:00:00.000Z",
+      "disposalDate": "2022-07-16T04:00:00.000Z",
+      "productName": "Plastic Food Containers",
+      "type": "Plastic",
+      "quantity": 10,
+      "landfillContribution": 1500,
+      "cmi": "0.50"
+  },
+  {
+      "id": 96,
+      "intakeDate": "2022-01-10T05:00:00.000Z",
+      "disposalDate": "2022-01-15T05:00:00.000Z",
+      "productName": "Styrofoam (Polystyrene) Cups",
+      "type": "Plastic",
+      "quantity": 10,
+      "landfillContribution": 500,
+      "cmi": "0.01"
+  },
+  {
+      "id": 8,
+      "intakeDate": "2022-05-16T04:00:00.000Z",
+      "disposalDate": "2022-05-26T04:00:00.000Z",
+      "productName": "Newspapers",
+      "type": "Paper",
+      "quantity": 5,
+      "landfillContribution": 2500,
+      "cmi": "0.80"
+  },
+  {
+      "id": 14,
+      "intakeDate": "2022-04-06T04:00:00.000Z",
+      "disposalDate": "2022-04-09T04:00:00.000Z",
+      "productName": "Newspapers",
+      "type": "Paper",
+      "quantity": 2,
+      "landfillContribution": 1000,
+      "cmi": "0.80"
+  },
+  {
+      "id": 34,
+      "intakeDate": "2022-01-23T05:00:00.000Z",
+      "disposalDate": "2022-01-26T05:00:00.000Z",
+      "productName": "Office Paper",
+      "type": "Paper",
+      "quantity": 7,
+      "landfillContribution": 5600,
+      "cmi": "0.95"
+  },
+  {
+      "id": 41,
+      "intakeDate": "2022-06-02T04:00:00.000Z",
+      "disposalDate": "2022-06-08T04:00:00.000Z",
+      "productName": "Newspapers",
+      "type": "Paper",
+      "quantity": 3,
+      "landfillContribution": 1500,
+      "cmi": "0.80"
+  },
+  {
+      "id": 47,
+      "intakeDate": "2022-01-27T05:00:00.000Z",
+      "disposalDate": "2022-02-05T05:00:00.000Z",
+      "productName": "Newspapers",
+      "type": "Paper",
+      "quantity": 8,
+      "landfillContribution": 4000,
+      "cmi": "0.80"
+  },
+  {
+      "id": 48,
+      "intakeDate": "2022-08-01T04:00:00.000Z",
+      "disposalDate": "2022-08-02T04:00:00.000Z",
+      "productName": "Office Paper",
+      "type": "Paper",
+      "quantity": 2,
+      "landfillContribution": 1600,
+      "cmi": "0.95"
+  },
+  {
+      "id": 54,
+      "intakeDate": "2022-07-02T04:00:00.000Z",
+      "disposalDate": "2022-07-05T04:00:00.000Z",
+      "productName": "Office Paper",
+      "type": "Paper",
+      "quantity": 4,
+      "landfillContribution": 3200,
+      "cmi": "0.95"
+  },
+  {
+      "id": 69,
+      "intakeDate": "2022-11-22T05:00:00.000Z",
+      "disposalDate": "2022-11-24T05:00:00.000Z",
+      "productName": "Office Paper",
+      "type": "Paper",
+      "quantity": 4,
+      "landfillContribution": 3200,
+      "cmi": "0.95"
+  },
+  {
+      "id": 70,
+      "intakeDate": "2022-06-28T04:00:00.000Z",
+      "disposalDate": "2022-07-06T04:00:00.000Z",
+      "productName": "Cardboard Boxes",
+      "type": "Paper",
+      "quantity": 5,
+      "landfillContribution": 5000,
+      "cmi": "0.90"
+  },
+  {
+      "id": 74,
+      "intakeDate": "2022-10-19T04:00:00.000Z",
+      "disposalDate": "2022-11-01T04:00:00.000Z",
+      "productName": "Newspapers",
+      "type": "Paper",
+      "quantity": 1,
+      "landfillContribution": 500,
+      "cmi": "0.80"
+  },
+  {
+      "id": 89,
+      "intakeDate": "2022-06-11T04:00:00.000Z",
+      "disposalDate": "2022-06-24T04:00:00.000Z",
+      "productName": "Newspapers",
+      "type": "Paper",
+      "quantity": 9,
+      "landfillContribution": 4500,
+      "cmi": "0.80"
+  },
+  {
+      "id": 95,
+      "intakeDate": "2022-06-23T04:00:00.000Z",
+      "disposalDate": "2022-07-07T04:00:00.000Z",
+      "productName": "Cardboard Boxes",
+      "type": "Paper",
+      "quantity": 9,
+      "landfillContribution": 9000,
+      "cmi": "0.90"
+  },
+  {
+      "id": 97,
+      "intakeDate": "2022-02-05T05:00:00.000Z",
+      "disposalDate": "2022-02-13T05:00:00.000Z",
+      "productName": "Newspapers",
+      "type": "Paper",
+      "quantity": 4,
+      "landfillContribution": 2000,
+      "cmi": "0.80"
+  },
+  {
+      "id": 100,
+      "intakeDate": "2022-08-10T04:00:00.000Z",
+      "disposalDate": "2022-08-24T04:00:00.000Z",
+      "productName": "Cardboard Boxes",
+      "type": "Paper",
+      "quantity": 4,
+      "landfillContribution": 4000,
+      "cmi": "0.90"
+  },
+  {
+      "id": 18,
+      "intakeDate": "2022-08-28T04:00:00.000Z",
+      "disposalDate": "2022-09-02T04:00:00.000Z",
+      "productName": "Glass Jars",
+      "type": "Glass",
+      "quantity": 5,
+      "landfillContribution": 2000,
+      "cmi": "0.85"
+  },
+  {
+      "id": 28,
+      "intakeDate": "2022-01-07T05:00:00.000Z",
+      "disposalDate": "2022-01-17T05:00:00.000Z",
+      "productName": "Glass Bottles",
+      "type": "Glass",
+      "quantity": 8,
+      "landfillContribution": 4000,
+      "cmi": "0.80"
+  },
+  {
+      "id": 30,
+      "intakeDate": "2022-07-01T04:00:00.000Z",
+      "disposalDate": "2022-07-12T04:00:00.000Z",
+      "productName": "Glass Bottles",
+      "type": "Glass",
+      "quantity": 1,
+      "landfillContribution": 500,
+      "cmi": "0.80"
+  },
+  {
+      "id": 5,
+      "intakeDate": "2022-11-23T05:00:00.000Z",
+      "disposalDate": "2022-12-05T05:00:00.000Z",
+      "productName": "Steel Cans",
+      "type": "Metal",
+      "quantity": 1,
+      "landfillContribution": 100,
+      "cmi": "0.85"
+  },
+  {
+      "id": 9,
+      "intakeDate": "2022-10-25T04:00:00.000Z",
+      "disposalDate": "2022-10-28T04:00:00.000Z",
+      "productName": "Tin Foil",
+      "type": "Metal",
+      "quantity": 10,
+      "landfillContribution": 200,
+      "cmi": "0.70"
+  },
+  {
+      "id": 29,
+      "intakeDate": "2022-07-27T04:00:00.000Z",
+      "disposalDate": "2022-08-08T04:00:00.000Z",
+      "productName": "Steel Cans",
+      "type": "Metal",
+      "quantity": 4,
+      "landfillContribution": 400,
+      "cmi": "0.85"
+  },
+  {
+      "id": 33,
+      "intakeDate": "2022-06-22T04:00:00.000Z",
+      "disposalDate": "2022-06-28T04:00:00.000Z",
+      "productName": "Steel Cans",
+      "type": "Metal",
+      "quantity": 6,
+      "landfillContribution": 600,
+      "cmi": "0.85"
+  },
+  {
+      "id": 38,
+      "intakeDate": "2022-08-18T04:00:00.000Z",
+      "disposalDate": "2022-08-28T04:00:00.000Z",
+      "productName": "Tin Foil",
+      "type": "Metal",
+      "quantity": 1,
+      "landfillContribution": 20,
+      "cmi": "0.70"
+  },
+  {
+      "id": 39,
+      "intakeDate": "2022-04-23T04:00:00.000Z",
+      "disposalDate": "2022-05-07T04:00:00.000Z",
+      "productName": "Steel Cans",
+      "type": "Metal",
+      "quantity": 1,
+      "landfillContribution": 100,
+      "cmi": "0.85"
+  },
+  {
+      "id": 45,
+      "intakeDate": "2022-06-08T04:00:00.000Z",
+      "disposalDate": "2022-06-10T04:00:00.000Z",
+      "productName": "Tin Foil",
+      "type": "Metal",
+      "quantity": 9,
+      "landfillContribution": 180,
+      "cmi": "0.70"
+  },
+  {
+      "id": 57,
+      "intakeDate": "2022-06-03T04:00:00.000Z",
+      "disposalDate": "2022-06-11T04:00:00.000Z",
+      "productName": "Tin Foil",
+      "type": "Metal",
+      "quantity": 7,
+      "landfillContribution": 140,
+      "cmi": "0.70"
+  },
+  {
+      "id": 58,
+      "intakeDate": "2022-05-01T04:00:00.000Z",
+      "disposalDate": "2022-05-15T04:00:00.000Z",
+      "productName": "Aluminum Cans",
+      "type": "Metal",
+      "quantity": 5,
+      "landfillContribution": 250,
+      "cmi": "0.90"
+  },
+  {
+      "id": 73,
+      "intakeDate": "2022-07-23T04:00:00.000Z",
+      "disposalDate": "2022-07-28T04:00:00.000Z",
+      "productName": "Tin Foil",
+      "type": "Metal",
+      "quantity": 8,
+      "landfillContribution": 160,
+      "cmi": "0.70"
+  },
+  {
+      "id": 92,
+      "intakeDate": "2022-11-23T05:00:00.000Z",
+      "disposalDate": "2022-11-27T05:00:00.000Z",
+      "productName": "Tin Foil",
+      "type": "Metal",
+      "quantity": 9,
+      "landfillContribution": 180,
+      "cmi": "0.70"
+  },
+  {
+      "id": 94,
+      "intakeDate": "2022-01-19T05:00:00.000Z",
+      "disposalDate": "2022-02-01T05:00:00.000Z",
+      "productName": "Aluminum Cans",
+      "type": "Metal",
+      "quantity": 6,
+      "landfillContribution": 300,
+      "cmi": "0.90"
+  },
+  {
+      "id": 98,
+      "intakeDate": "2022-07-07T04:00:00.000Z",
+      "disposalDate": "2022-07-19T04:00:00.000Z",
+      "productName": "Steel Cans",
+      "type": "Metal",
+      "quantity": 10,
+      "landfillContribution": 1000,
+      "cmi": "0.85"
+  },
+  {
+      "id": 2,
+      "intakeDate": "2022-03-20T04:00:00.000Z",
+      "disposalDate": "2022-04-02T04:00:00.000Z",
+      "productName": "Coffee Grounds",
+      "type": "Organic Waste",
+      "quantity": 5,
+      "landfillContribution": 500,
+      "cmi": "1.00"
+  },
+  {
+      "id": 3,
+      "intakeDate": "2022-02-17T05:00:00.000Z",
+      "disposalDate": "2022-02-23T05:00:00.000Z",
+      "productName": "Coffee Grounds",
+      "type": "Organic Waste",
+      "quantity": 7,
+      "landfillContribution": 700,
+      "cmi": "1.00"
+  },
+  {
+      "id": 12,
+      "intakeDate": "2022-06-12T04:00:00.000Z",
+      "disposalDate": "2022-06-16T04:00:00.000Z",
+      "productName": "Eggshells",
+      "type": "Organic Waste",
+      "quantity": 6,
+      "landfillContribution": 60,
+      "cmi": "1.00"
+  },
+  {
+      "id": 36,
+      "intakeDate": "2022-03-19T04:00:00.000Z",
+      "disposalDate": "2022-03-26T04:00:00.000Z",
+      "productName": "Coffee Grounds",
+      "type": "Organic Waste",
+      "quantity": 10,
+      "landfillContribution": 1000,
+      "cmi": "1.00"
+  },
+  {
+      "id": 37,
+      "intakeDate": "2022-07-26T04:00:00.000Z",
+      "disposalDate": "2022-08-05T04:00:00.000Z",
+      "productName": "Eggshells",
+      "type": "Organic Waste",
+      "quantity": 1,
+      "landfillContribution": 10,
+      "cmi": "1.00"
+  },
+  {
+      "id": 40,
+      "intakeDate": "2022-05-23T04:00:00.000Z",
+      "disposalDate": "2022-05-30T04:00:00.000Z",
+      "productName": "Eggshells",
+      "type": "Organic Waste",
+      "quantity": 9,
+      "landfillContribution": 90,
+      "cmi": "1.00"
+  },
+  {
+      "id": 52,
+      "intakeDate": "2022-08-11T04:00:00.000Z",
+      "disposalDate": "2022-08-25T04:00:00.000Z",
+      "productName": "Food Scraps",
+      "type": "Organic Waste",
+      "quantity": 3,
+      "landfillContribution": 1500,
+      "cmi": "1.00"
+  },
+  {
+      "id": 55,
+      "intakeDate": "2022-11-01T04:00:00.000Z",
+      "disposalDate": "2022-11-15T05:00:00.000Z",
+      "productName": "Food Scraps",
+      "type": "Organic Waste",
+      "quantity": 2,
+      "landfillContribution": 1000,
+      "cmi": "1.00"
+  },
+  {
+      "id": 60,
+      "intakeDate": "2022-04-03T04:00:00.000Z",
+      "disposalDate": "2022-04-05T04:00:00.000Z",
+      "productName": "Eggshells",
+      "type": "Organic Waste",
+      "quantity": 3,
+      "landfillContribution": 30,
+      "cmi": "1.00"
+  },
+  {
+      "id": 64,
+      "intakeDate": "2022-07-05T04:00:00.000Z",
+      "disposalDate": "2022-07-13T04:00:00.000Z",
+      "productName": "Eggshells",
+      "type": "Organic Waste",
+      "quantity": 7,
+      "landfillContribution": 70,
+      "cmi": "1.00"
+  },
+  {
+      "id": 77,
+      "intakeDate": "2022-06-01T04:00:00.000Z",
+      "disposalDate": "2022-06-12T04:00:00.000Z",
+      "productName": "Eggshells",
+      "type": "Organic Waste",
+      "quantity": 9,
+      "landfillContribution": 90,
+      "cmi": "1.00"
+  },
+  {
+      "id": 85,
+      "intakeDate": "2022-04-24T04:00:00.000Z",
+      "disposalDate": "2022-05-03T04:00:00.000Z",
+      "productName": "Food Scraps",
+      "type": "Organic Waste",
+      "quantity": 6,
+      "landfillContribution": 3000,
+      "cmi": "1.00"
+  },
+  {
+      "id": 90,
+      "intakeDate": "2022-11-11T05:00:00.000Z",
+      "disposalDate": "2022-11-16T05:00:00.000Z",
+      "productName": "Eggshells",
+      "type": "Organic Waste",
+      "quantity": 6,
+      "landfillContribution": 60,
+      "cmi": "1.00"
+  },
+  {
+      "id": 91,
+      "intakeDate": "2022-09-11T04:00:00.000Z",
+      "disposalDate": "2022-09-19T04:00:00.000Z",
+      "productName": "Food Scraps",
+      "type": "Organic Waste",
+      "quantity": 10,
+      "landfillContribution": 5000,
+      "cmi": "1.00"
+  },
+  {
+      "id": 99,
+      "intakeDate": "2022-03-15T04:00:00.000Z",
+      "disposalDate": "2022-03-23T04:00:00.000Z",
+      "productName": "Coffee Grounds",
+      "type": "Organic Waste",
+      "quantity": 6,
+      "landfillContribution": 600,
+      "cmi": "1.00"
+  },
+  {
+      "id": 11,
+      "intakeDate": "2022-06-10T04:00:00.000Z",
+      "disposalDate": "2022-06-22T04:00:00.000Z",
+      "productName": "Cleaning Products",
+      "type": "Electronics",
+      "quantity": 5,
+      "landfillContribution": 1500,
+      "cmi": "0.20"
+  },
+  {
+      "id": 15,
+      "intakeDate": "2022-03-11T05:00:00.000Z",
+      "disposalDate": "2022-03-23T04:00:00.000Z",
+      "productName": "Paint",
+      "type": "Electronics",
+      "quantity": 4,
+      "landfillContribution": 4000,
+      "cmi": "0.20"
+  },
+  {
+      "id": 22,
+      "intakeDate": "2022-09-25T04:00:00.000Z",
+      "disposalDate": "2022-10-09T04:00:00.000Z",
+      "productName": "Cleaning Products",
+      "type": "Electronics",
+      "quantity": 2,
+      "landfillContribution": 600,
+      "cmi": "0.20"
+  },
+  {
+      "id": 23,
+      "intakeDate": "2022-01-15T05:00:00.000Z",
+      "disposalDate": "2022-01-26T05:00:00.000Z",
+      "productName": "Paint",
+      "type": "Electronics",
+      "quantity": 10,
+      "landfillContribution": 10000,
+      "cmi": "0.20"
+  },
+  {
+      "id": 26,
+      "intakeDate": "2022-05-15T04:00:00.000Z",
+      "disposalDate": "2022-05-25T04:00:00.000Z",
+      "productName": "Paint",
+      "type": "Electronics",
+      "quantity": 5,
+      "landfillContribution": 5000,
+      "cmi": "0.20"
+  },
+  {
+      "id": 35,
+      "intakeDate": "2022-12-24T05:00:00.000Z",
+      "disposalDate": "2023-01-02T05:00:00.000Z",
+      "productName": "Batteries",
+      "type": "Electronics",
+      "quantity": 9,
+      "landfillContribution": 450,
+      "cmi": "0.70"
+  },
+  {
+      "id": 49,
+      "intakeDate": "2022-06-13T04:00:00.000Z",
+      "disposalDate": "2022-06-27T04:00:00.000Z",
+      "productName": "Pesticides",
+      "type": "Electronics",
+      "quantity": 4,
+      "landfillContribution": 800,
+      "cmi": "0.10"
+  },
+  {
+      "id": 53,
+      "intakeDate": "2022-01-10T05:00:00.000Z",
+      "disposalDate": "2022-01-20T05:00:00.000Z",
+      "productName": "Old Phones",
+      "type": "Electronics",
+      "quantity": 2,
+      "landfillContribution": 300,
+      "cmi": "0.60"
+  },
+  {
+      "id": 56,
+      "intakeDate": "2022-06-07T04:00:00.000Z",
+      "disposalDate": "2022-06-09T04:00:00.000Z",
+      "productName": "Batteries",
+      "type": "Electronics",
+      "quantity": 4,
+      "landfillContribution": 200,
+      "cmi": "0.70"
+  },
+  {
+      "id": 59,
+      "intakeDate": "2022-12-15T05:00:00.000Z",
+      "disposalDate": "2022-12-19T05:00:00.000Z",
+      "productName": "Pesticides",
+      "type": "Electronics",
+      "quantity": 10,
+      "landfillContribution": 2000,
+      "cmi": "0.10"
+  },
+  {
+      "id": 65,
+      "intakeDate": "2022-02-10T05:00:00.000Z",
+      "disposalDate": "2022-02-24T05:00:00.000Z",
+      "productName": "Batteries",
+      "type": "Electronics",
+      "quantity": 2,
+      "landfillContribution": 100,
+      "cmi": "0.70"
+  },
+  {
+      "id": 67,
+      "intakeDate": "2022-03-10T05:00:00.000Z",
+      "disposalDate": "2022-03-16T04:00:00.000Z",
+      "productName": "Old Phones",
+      "type": "Electronics",
+      "quantity": 6,
+      "landfillContribution": 900,
+      "cmi": "0.60"
+  },
+  {
+      "id": 78,
+      "intakeDate": "2022-01-04T05:00:00.000Z",
+      "disposalDate": "2022-01-11T05:00:00.000Z",
+      "productName": "Batteries",
+      "type": "Electronics",
+      "quantity": 8,
+      "landfillContribution": 400,
+      "cmi": "0.70"
+  },
+  {
+      "id": 81,
+      "intakeDate": "2022-06-24T04:00:00.000Z",
+      "disposalDate": "2022-06-27T04:00:00.000Z",
+      "productName": "Batteries",
+      "type": "Electronics",
+      "quantity": 6,
+      "landfillContribution": 300,
+      "cmi": "0.70"
+  },
+  {
+      "id": 87,
+      "intakeDate": "2022-12-10T05:00:00.000Z",
+      "disposalDate": "2022-12-12T05:00:00.000Z",
+      "productName": "Cleaning Products",
+      "type": "Electronics",
+      "quantity": 7,
+      "landfillContribution": 2100,
+      "cmi": "0.20"
+  },
+  {
+      "id": 88,
+      "intakeDate": "2022-11-09T05:00:00.000Z",
+      "disposalDate": "2022-11-16T05:00:00.000Z",
+      "productName": "Paint",
+      "type": "Electronics",
+      "quantity": 1,
+      "landfillContribution": 1000,
+      "cmi": "0.20"
+  },
+  {
+      "id": 7,
+      "intakeDate": "2022-12-10T05:00:00.000Z",
+      "disposalDate": "2022-12-21T05:00:00.000Z",
+      "productName": "Towels & Linens",
+      "type": "Textiles",
+      "quantity": 7,
+      "landfillContribution": 3500,
+      "cmi": "0.35"
+  },
+  {
+      "id": 25,
+      "intakeDate": "2022-08-15T04:00:00.000Z",
+      "disposalDate": "2022-08-28T04:00:00.000Z",
+      "productName": "Old Clothing",
+      "type": "Textiles",
+      "quantity": 7,
+      "landfillContribution": 4200,
+      "cmi": "0.40"
+  },
+  {
+      "id": 43,
+      "intakeDate": "2022-10-10T04:00:00.000Z",
+      "disposalDate": "2022-10-18T04:00:00.000Z",
+      "productName": "Old Clothing",
+      "type": "Textiles",
+      "quantity": 9,
+      "landfillContribution": 5400,
+      "cmi": "0.40"
+  },
+  {
+      "id": 72,
+      "intakeDate": "2022-12-18T05:00:00.000Z",
+      "disposalDate": "2022-12-26T05:00:00.000Z",
+      "productName": "Old Clothing",
+      "type": "Textiles",
+      "quantity": 6,
+      "landfillContribution": 3600,
+      "cmi": "0.40"
+  },
+  {
+      "id": 75,
+      "intakeDate": "2022-06-06T04:00:00.000Z",
+      "disposalDate": "2022-06-16T04:00:00.000Z",
+      "productName": "Old Clothing",
+      "type": "Textiles",
+      "quantity": 7,
+      "landfillContribution": 4200,
+      "cmi": "0.40"
+  },
+  {
+      "id": 86,
+      "intakeDate": "2022-11-09T05:00:00.000Z",
+      "disposalDate": "2022-11-12T05:00:00.000Z",
+      "productName": "Towels & Linens",
+      "type": "Textiles",
+      "quantity": 10,
+      "landfillContribution": 5000,
+      "cmi": "0.35"
+  }
+]

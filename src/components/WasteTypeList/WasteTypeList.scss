@@ -1,0 +1,15 @@
+@use "../../styles/partials/color" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/typography" as *;
+
+.slider{
+  width: 10rem;
+  height: 20rem;
+  background-color: aliceblue;
+}
+.slick-slide{
+  width: 10rem;
+  height: 20rem;
+
+}

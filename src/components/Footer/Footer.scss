@@ -6,11 +6,10 @@
 .footer {
   @include flex(center, center);
   @include global-padding;
+  @include section-padding;
   background-color: $primary-graphite;
-  padding: 1rem;
   @include tablet{
     @include flex(flex-end, center);
-    padding: 1rem;
   }
 
   &__copyright {

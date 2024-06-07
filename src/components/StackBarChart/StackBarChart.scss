@@ -1,0 +1,17 @@
+@use "../../styles/partials/color" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/typography" as *;
+
+.bar{
+  fill: aliceblue;
+
+}
+.bar-label {
+  fill: $primary-graphite; 
+  font-size: 121rem;
+}
+.chart-container{
+  @include flex(center, center);
+  
+}
