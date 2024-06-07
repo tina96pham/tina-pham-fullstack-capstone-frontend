@@ -2,3 +2,52 @@
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/mixin" as *;
 @use "../../styles/partials/typography" as *;
+
+.header {
+  @include flex(space-between, center);
+  @include global-padding;
+  flex-wrap: wrap;
+
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+    padding-left: 0;
+    @include tablet{
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+  &__home{
+    @include font(1.25rem, 2.5rem, 600);
+    text-decoration: none;
+    color: $primary-graphite;
+    background-color: $primary-pink;
+    width: calc(100% - 6rem);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.25rem 0;
+    @include tablet{
+      order: 2;
+      width:7.5rem;
+    }
+  }
+  &__container{
+    width: 100%;
+    @include flex(space-between, center);
+    border: 1px solid $secondary-border-color;
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+    @include tablet{
+      order: 1;
+      width: 20rem;
+    }
+
+  }
+  &__link{
+    text-decoration: none;
+    @include font(1rem, 2.5rem, 600);
+    color: $primary-graphite;
+
+
+  }
+}
