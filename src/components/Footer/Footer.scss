@@ -2,3 +2,18 @@
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/mixin" as *;
 @use "../../styles/partials/typography" as *;
+
+.footer {
+  @include flex(center, center);
+  @include global-padding;
+  background-color: $primary-graphite;
+  padding: 1rem;
+  @include tablet{
+    @include flex(flex-end, center);
+    padding: 1rem;
+  }
+
+  &__copyright {
+    color: $secondary-cloud;
+  }
+}

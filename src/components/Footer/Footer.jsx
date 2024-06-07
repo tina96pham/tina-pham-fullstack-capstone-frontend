@@ -3,7 +3,7 @@ import"./Footer.scss";
 function Footer() {
   return (
     <div className="footer">
-      <small className=" footer__copyright">© Rekindle, 2024. All Rights Reserved.</small>
+      <small className=" footer__copyright">© REFINE.Inc, 2024. All Rights Reserved.</small>
     </div>
 )
 }

@@ -1,0 +1,34 @@
+@use "../../styles/partials/color" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/typography" as *;
+
+.hero {
+  @include global-padding;
+  @include flex(space-between, center);
+  flex-direction: column;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  // background-color: $primary-light-green;
+  @include tablet{
+    flex-direction: row;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  &__content{
+    width:100%;
+    @include tablet{
+      width: 50%;
+    }
+  }
+  &__image{
+    width: 10rem;
+    @include tablet{
+      width: 20rem;
+    }
+    @include desktop{
+      width: 30rem;
+    }
+  }
+
+}

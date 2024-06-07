@@ -6,7 +6,9 @@
 .header {
   @include flex(space-between, center);
   @include global-padding;
+  padding-bottom: 1rem;
   flex-wrap: wrap;
+  background-color: $light-blue;
 
   &__logo {
     width: 5rem;
@@ -30,6 +32,9 @@
       order: 2;
       width:7.5rem;
     }
+    &:hover{
+      background-color: $primary-hover-pink;
+    }
   }
   &__container{
     width: 100%;
@@ -47,7 +52,9 @@
     text-decoration: none;
     @include font(1rem, 2.5rem, 600);
     color: $primary-graphite;
-
-
+    &:hover{
+      text-decoration: underline;
+      color: $primary-pink;
+    }
   }
 }

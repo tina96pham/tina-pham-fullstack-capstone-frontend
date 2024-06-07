@@ -7,4 +7,44 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: $font-primary, "Open-sans";
+  color: $primary-graphite;
+}
+h1{
+  @include font(1.5rem, 2rem, 700);
+  @include tablet{
+    @include font(2.25rem, 2.75rem, 700);
+  } 
+}
+
+h2{
+  @include font(1.25rem, 2.5rem, 700);
+  @include tablet{
+    @include font(1.5rem, 2.75rem, 700);
+  }
+}
+
+h3{
+  @include font(1rem, 1.5rem, 700);
+  @include tablet{
+    @include font(1.25rem, 2rem, 700);
+  }
+}
+h4{
+  @include font(0.75rem, 1.25rem, 700);
+
+  @include tablet{
+    @include font(0.875rem, 1.375rem, 700);
+  }
+}
+p{
+  @include font(0.75rem, 1.25rem, 400);
+  @include tablet{
+    @include font(0.875rem, 1.375rem, 400);
+  }
+}
+small{
+  @include font(0.75rem, 1.25rem, 400);
+  @include tablet{
+    @include font(0.875rem, 1.375rem, 400);
+  }
 }

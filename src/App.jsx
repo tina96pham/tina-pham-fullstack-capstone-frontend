@@ -3,6 +3,7 @@ import './App.scss';
 import Headers from './components/Headers/Headers';
 import HomePage from './pages/HomePage/HomePage';
 import TrackerPage from './pages/TrackerPage/TrackerPage';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<HomePage/>}/>
         <Route path="/tracker" element={<TrackerPage/>}/>
       </Routes>
+      <Footer/>
      
     </BrowserRouter>
   );
