@@ -5,16 +5,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function WasteTypeList() {
-  var settings = {
+  let settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 2,
   };
   return (
-    <Slider {...settings}
-    className="waste-type">
+    <div className="waste-type">
+       <Slider {...settings}>
       <div className="waste-type__container">
         <h3>1</h3>
       </div>
@@ -37,6 +37,9 @@ function WasteTypeList() {
         <h3>7</h3>
       </div>
     </Slider>
+
+    </div>
+   
   );
 }
 

@@ -2,9 +2,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.scss';
 import Headers from './components/Headers/Headers';
 import HomePage from './pages/HomePage/HomePage';
-import TrackerPage from './pages/TrackerPage/TrackerPage';
+import GoalSetterPage from './pages/GoalSetterPage/GoalSetterPage';
+import MyProgressPage from './pages/MyProgressPage/MyProgressPage';
 import Footer from './components/Footer/Footer';
-import MyProgressPage from "./pages/MyProgressPage/MyProgressPage"
+
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/progress" element={<MyProgressPage/>}/>
-        <Route path="/tracker" element={<TrackerPage/>}/>
+        <Route path="/goal" element={<GoalSetterPage/>}/>
       </Routes>
-      <Footer/>
+      <Footer className="footer"/>
      
     </BrowserRouter>
   );

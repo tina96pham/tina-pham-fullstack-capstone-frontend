@@ -8,8 +8,25 @@
   height: 20rem;
   background-color: aliceblue;
 }
-.slick-slide{
-  width: 10rem;
-  height: 20rem;
+.slick-arrow {
+  background-color: #333; /* Example arrow background */
+  border-radius: 50%;
+}
 
+.waste-type{
+  @include flex(center, center);
+  @include global-padding;
+  width: 80%;
+
+  &__container{
+    width: 20rem;
+    height: 30rem;
+    border: 1px solid $secondary-border-color;
+    border-radius: 1rem;
+    padding: 1rem;
+    @include tablet{
+      width: 25rem;
+      height: 35rem;
+    }
+  }
 }

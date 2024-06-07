@@ -1,0 +1,11 @@
+@use "../../styles/partials/color" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/typography" as *;
+
+.form{
+  @include global-padding;
+  @include flex(center, flex-start);
+  flex-direction: column;
+
+}

@@ -7,7 +7,7 @@ function Hero () {
     <div className="hero">
       <div className="hero__content">
         <h1 className="hero__header">Welcome to Refine</h1>
-        <h3 className="hero__subheader">Your personal assistant for sustainable waste management and pollution reduction</h3>
+        <p className="hero__subheader">Your personal assistant for sustainable waste management and pollution reduction</p>
       </div>
       <img className="hero__image" src={heroImage} alt="Circular Economy" />
     </div>

@@ -8,6 +8,7 @@ function HomePage () {
     <div className="home-page">
       <Hero />
       <WasteTypeList/>
+
     </div>
   )
 };

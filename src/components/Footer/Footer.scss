@@ -8,9 +8,9 @@
   @include global-padding;
   @include section-padding;
   background-color: $primary-graphite;
-  @include tablet{
-    @include flex(flex-end, center);
-  }
+  // position: fixed;
+  // bottom: 0;
+  // width: 100%;
 
   &__copyright {
     color: $secondary-cloud;

@@ -1,10 +1,12 @@
 import "./MyProgressPage.scss";
+import StackBarChart from "../../components/StackBarChart/StackBarChart";
+
 
 function MyProgressPage (){
 
   return (
     <div className="my-progress-page">
-      <h1>My Progress Page</h1>
+      <StackBarChart/>
     </div>
   )
 }

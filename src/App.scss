@@ -1,5 +1,12 @@
 @use "./styles//partials/global";
+@use "./styles//partials/typography" as *;
+@use "./styles//partials/color" as *;
 
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
 /*
 .App {

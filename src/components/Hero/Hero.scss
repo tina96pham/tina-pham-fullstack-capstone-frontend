@@ -22,7 +22,9 @@
     }
   }
   &__image{
-    width: 10rem;
+    border: 1px solid $secondary-border-color;
+    border-radius: 1rem;
+    width: 100%;
     @include tablet{
       width: 20rem;
     }
