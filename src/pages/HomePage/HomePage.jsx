@@ -5,8 +5,7 @@ import WasteApi from "../../utils/waste-api";
 
 
 function HomePage () {
-const wasteApi = new WasteApi()
-console.log(wasteApi.getAllWasteTypes())
+
   return (
     <div className="home-page">
       <Hero />

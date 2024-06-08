@@ -16,7 +16,6 @@
 .waste-type{
   @include flex(center, center);
   @include global-padding;
-  flex-wrap: wrap;
   border: 1px solid $secondary-border-color;
 
 
