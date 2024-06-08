@@ -4,11 +4,13 @@ function TrackerForm() {
   return (
     <form className="form">
       <div>
-        <label for="date">Entry Date:</label>
+        <label htmlFor="date">
+          <h3>Entry Date:</h3>
+        </label>
         <input type="date" id="entryDate" name="entryDate" />
       </div>
       <div>
-        <label className="form__label" for="wasteType">
+        <label className="form__label" htmlFor="wasteType">
           <h3> Waste Type:</h3>
         </label>
         <select id="wasteType" name="wasteType">
@@ -22,15 +24,19 @@ function TrackerForm() {
         </select>
       </div>
       <div>
-      <label for="product">Product:</label>
+      <label htmlFor="product">
+        <h3>Product:</h3>
+      </label>
       <input type="text" id="product" name="product" />
       </div>
   
 
-      <label for="quantity">Quantity:</label>
+      <label htmlFor="quantity">
+        <h3>Quantity:</h3>
+      </label>
       <input type="number" id="quantity" name="quantity" />
 
-      <button>ADD</button>
+      <button className="">ADD</button>
     </form>
   );
 }

@@ -8,7 +8,7 @@ class WasteApi {
   // GET wast types info
   async getAllWasteTypes() {
     try {
-      const response = await axios.get(`${this.baseUrl}/api/info`);
+      const response = await axios.get(`${this.baseUrl}/api/wastes`);
       return response.data;
     } catch (error) {
       console.error(`Unable to get waste type data: ${error}`);
@@ -17,7 +17,7 @@ class WasteApi {
 
 
 // GET wast record info
-async getAllWastelog() {
+async getAllRecords() {
   try {
     const response = await axios.get(`${this.baseUrl}/api/wastelog`);
     return response.data;

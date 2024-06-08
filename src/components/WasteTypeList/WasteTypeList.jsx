@@ -4,6 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import WasteTypeCard from "../WasteTypeCard/WasteTypeCard";
+import { useFetchWasteInfo } from "../../utils/useFetchData";
+
 function WasteTypeList() {
   let settings = {
     dots: true,
@@ -12,34 +15,19 @@ function WasteTypeList() {
     slidesToShow: 3,
     slidesToScroll: 2,
   };
+
+  const { wasteInfo } = useFetchWasteInfo();
   return (
     <div className="waste-type">
-       <Slider {...settings}>
+      <Slider {...settings}>
       <div className="waste-type__container">
-        <h3>1</h3>
+        <WasteTypeCard 
+        key={wasteInfo.id} 
+        wasteInfo={wasteInfo} />
       </div>
-      <div className="waste-type__container">
-        <h3>2</h3>
-      </div>
-      <div className="waste-type__container">
-        <h3>3</h3>
-      </div>
-      <div className="waste-type__container">
-        <h3>4</h3>
-      </div>
-      <div className="waste-type__container">
-        <h3>5</h3>
-      </div>
-      <div className="waste-type__container">
-        <h3>6</h3>
-      </div>
-      <div className="waste-type__container">
-        <h3>7</h3>
-      </div>
-    </Slider>
-
+      </Slider>
     </div>
-   
+  
   );
 }
 

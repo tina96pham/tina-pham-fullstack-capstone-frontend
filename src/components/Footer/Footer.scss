@@ -5,12 +5,10 @@
 
 .footer {
   @include flex(center, center);
-  @include global-padding;
   @include section-padding;
   background-color: $primary-graphite;
-  // position: fixed;
-  // bottom: 0;
-  // width: 100%;
+  box-sizing: border-box;
+  margin: 0;
 
   &__copyright {
     color: $secondary-cloud;

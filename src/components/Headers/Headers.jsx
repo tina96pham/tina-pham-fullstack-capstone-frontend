@@ -10,7 +10,7 @@ function Headers() {
       <NavLink  className="header__home" to="/">HOME</NavLink>
       <div className="header__container">
         <NavLink to="/progress" className="header__link">My Progress</NavLink>
-        <NavLink to="/tracker" className="header__link">Goal Setter</NavLink>
+        <NavLink to="/goal" className="header__link">Goal Catcher</NavLink>
       </div>
     </div>
   );

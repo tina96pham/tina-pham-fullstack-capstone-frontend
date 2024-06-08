@@ -1,0 +1,20 @@
+@use "../../styles/partials/color" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/typography" as *;
+
+
+.waste-type-card {
+  @include flex(center, center);
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 5rem;
+  height: 10rem;
+  border: 1px solid $secondary-border-color;
+  border-radius: 1rem;
+  padding: 1rem;
+  @include tablet{
+    width: 7.5rem;
+    height: 10rem;
+  }
+}
