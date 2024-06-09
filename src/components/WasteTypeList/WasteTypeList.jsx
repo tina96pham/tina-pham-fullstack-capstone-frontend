@@ -36,8 +36,8 @@ function WasteTypeList() {
           }}
           breakpoints={{ 
             0: { slidesPerView: 1}, 
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 4 }, 
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }, 
           }}
         >
           {wasteData.map((item) => (

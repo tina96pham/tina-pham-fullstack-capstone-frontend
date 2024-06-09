@@ -8,11 +8,11 @@ function WasteTypeCard ({item}){
         <h2 class="info-card__title">{item.name}</h2>
     </div>
     <div class="info-card__info">
-
-        <bold>Contribution:</bold> {item.landfill_contribution} %
+        <p> {item.going_to_landfill} % of {item.name} go to landfill</p>
     </div>
 
       <p class="info-card__description">
+        <h4>How {item.name} circulate?</h4>
         {item.process}
       </p>
 

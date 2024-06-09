@@ -8,13 +8,13 @@
   @include flex(center, center);
   flex-direction: column;
   width: 15rem;
-  height: 25rem;
+  height: 30rem;
   border: 1px solid $secondary-border-color;
   border-radius: 1rem;
   padding: 1rem;
   @include tablet{
     width: 15rem;
-    height: 25rem;
+    height: 30rem;
   }
   &__img{
     width: 100%;
