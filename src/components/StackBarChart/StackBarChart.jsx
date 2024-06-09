@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import * as d3 from "d3";
 import "./StackBarChart.scss";
-import { useFetchWastelog } from "../../utils/useFetchData";
+// import { useFetchWastelog } from "../../utils/useFetchData";
 import wastelog from "../../data/log-data.json";
 
 const StackBarChart = () => {
@@ -64,7 +64,7 @@ const StackBarChart = () => {
     g.append("g")
       .attr("transform", `translate(0,${height})`)
       .call(d3.axisBottom(xScale));
-  }, [wastelog]);
+  }, []);
 
   return(
   <div className="chart-container">

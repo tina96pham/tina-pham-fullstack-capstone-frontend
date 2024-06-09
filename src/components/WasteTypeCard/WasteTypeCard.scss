@@ -4,17 +4,21 @@
 @use "../../styles/partials/typography" as *;
 
 
-.waste-type-card {
+.info-card{
   @include flex(center, center);
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 5rem;
-  height: 10rem;
+  flex-direction: column;
+  width: 15rem;
+  height: 25rem;
   border: 1px solid $secondary-border-color;
   border-radius: 1rem;
   padding: 1rem;
   @include tablet{
-    width: 7.5rem;
+    width: 15rem;
+    height: 25rem;
+  }
+  &__img{
+    width: 100%;
     height: 10rem;
+   
   }
 }
