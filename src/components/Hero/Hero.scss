@@ -9,9 +9,6 @@
   flex-direction: column;
   padding-bottom: 1rem;
   padding-top: 1rem;
-  // background-image: url(../../assets/images/planet-ark.jpg);
-  // background-size: cover;
-  // background-position: center;
   background-color: $primary-light-green;
   @include tablet{
     flex-direction: row;
@@ -43,6 +40,3 @@
   }
 
 }
-// .hero__subheader{
-//   @include font(1rem, 2rem, 600);
-// }

@@ -1,105 +1,59 @@
-import {useState, useEffect, useMemo, useCallback} from "react";
+import {useState, useEffect, useMemo} from "react";
 import WasteApi from "./waste-api";
-// export const useFetchInfo = () => {
-//   const wasteApi = useMemo(() => new WasteApi(), []);
-//   const [wasteInfo, setWasteInfo] = useState([]);
-//   const [loading, setLoading] = useState(false);
-//   const [error, setError] = useState(false);
 
-
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       setLoading(true);
-//       try {
-//         const fetchedData = await wasteApi.getAllWasteTypes();
-//         setWasteInfo(fetchedData);
-//         console.log(wasteInfo);
-//         setLoading(false);
-//       } catch (error) {
-//         setError(true);
-//         setLoading(false);
-//         console.error("Error fetching data: ", error);
-//       }
-//     };
-
-//     fetchData();
-//   }, [wasteApi]);
-
-//   return { wasteInfo, loading, error};
-// };
-export function useFetchWasteInfo() {
-  const wasteApi = useMemo(() => new WasteApi(), []); 
+// Get Waste Type Data
+export const useFetchWasteInfo = () => {
+  const wasteApi = useMemo(() => new WasteApi(), []);
   const [wasteData, setWasteData] = useState([]);
-  const [loading, setLoading] = useState(true); 
-  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
-  const fetchData = useCallback(async () => {
-    try {
-      const fetchedData = await wasteApi.getAllWasteTypes();
-      return fetchedData;
-    } catch (error) {
-      setError(error);
-      console.error('Error fetching data: ', error);
-      throw error; 
-    }
-  }, [wasteApi]); 
 
   useEffect(() => {
-    const fetchAsync = async () => {
-      setLoading(true); 
+    const fetchData = async () => {
+      setLoading(true);
       try {
-        const data = await fetchData(); 
-        setWasteData(data);
-        console.log(`Fetched waste data: `, data);
+        const fetchedData = await wasteApi.getAllWasteTypes();
+        setWasteData(fetchedData);
+        setLoading(false);
       } catch (error) {
-        console.error('Error fetching data: ', error);
-      } finally {
-        setLoading(false); 
+        setError(true);
+        setLoading(false);
+        console.error("Error fetching data: ", error);
       }
     };
 
-    fetchAsync();
-  }, [fetchData]); 
+    fetchData();
+  }, [wasteApi]);
 
-  return { wasteData, loading, error };
-}
+  return { wasteData, loading, error};
+};
 
-/*
-export function useFetchWasteInfo() {
-  const wasteApi =  useMemo(() => new WasteApi(), []); 
-  const [wasteData, setWasteData] = useState([]);
-  const [loading, setLoading] = useState(true); 
-  const [error, setError] = useState(null);
-
-  const fetchData = useCallback(async () => {
-    try {
-      const fetchedData = await wasteApi.getAllWasteTypes();
-      return fetchedData;
-    } catch (error) {
-      setError(error);
-      console.error('Error fetching data: ', error);
-      throw error; 
-    }
-  }, [wasteApi]); 
+// Get Product Info
+export const useSearchProducts = () => {
+  const wasteApi = useMemo(() => new WasteApi(), []);
+  const [productData, setProductData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const [search, setSearch] = useState(undefined);
 
   useEffect(() => {
-    const fetchAsync = async () => {
-      setLoading(true); 
+    const fetchData = async () => {
+      setLoading(true);
       try {
-        const data = await fetchData(); 
-
-        setWasteData(data);
-        console.log(`waste Date ${wasteData}`);
+        const fetchedData = await wasteApi.searchProducts(search);
+        setProductData(fetchedData);
+        setLoading(false);
       } catch (error) {
-        console.error('Error fetching data: ', error);
-      } finally {
-        setLoading(false); 
+        setError(true);
+        setLoading(false);
+        console.error("Error fetching data: ", error);
       }
     };
 
-    fetchAsync();
-  }, [fetchData, wasteData]); 
+    fetchData();
+  }, [wasteApi, search]);
 
-  return { wasteData, loading, error };
-}
-*/
+  return { productData, loading, error, setSearch, search};
+};
+

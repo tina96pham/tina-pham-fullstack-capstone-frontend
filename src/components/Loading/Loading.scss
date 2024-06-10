@@ -3,18 +3,17 @@
 @use "../../styles/partials/mixin" as *;
 @use "../../styles/partials/typography" as *;
 
-/* In your WasteTypeList.css or global CSS file */
 .loading {
   display: flex;
   align-items: center;  
   justify-content: center; 
-  margin-top: 20px; /* Adjust spacing as needed */
+  margin-top: 1rem; 
 }
 
 .dot {
-  width: 10px; 
-  height: 10px;
-  margin: 0 5px;
+  width: 0.625rem; 
+  height: 0.625rem;
+  margin: 0 0.313rem;
   background-color: $secondary-slate; 
   border-radius: 50%;
   animation: loadingDots 1.2s infinite ease-in-out;

@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.scss';
 import Headers from './components/Headers/Headers';
 import HomePage from './pages/HomePage/HomePage';
-import GoalSetterPage from './pages/GoalSetterPage/GoalSetterPage';
+import ActionPage from './pages/ActionPage/ActionPage';
 import MyProgressPage from './pages/MyProgressPage/MyProgressPage';
 import Footer from './components/Footer/Footer';
 
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/progress" element={<MyProgressPage/>}/>
-        <Route path="/goal" element={<GoalSetterPage/>}/>
+        <Route path="/goal" element={<ActionPage/>}/>
       </Routes>
       <Footer className="footer"/>
      
