@@ -29,6 +29,9 @@ function ActionPage() {
           </button>
         </div>
       </div>
+      <div>
+        <TrackerForm />
+      </div>
       <div className="action-page__goal-setter">
         <h2 className="action-page__header">✨Goal Setter✨</h2>
         <div className="action-page__action-container">

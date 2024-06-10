@@ -3,7 +3,7 @@
 @use "../../styles/partials/mixin" as *;
 @use "../../styles/partials/typography" as *;
 
-.form{
+.progress-form{
   @include global-padding;
   @include flex(center, flex-start);
   flex-direction: column;
