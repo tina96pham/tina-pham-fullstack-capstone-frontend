@@ -17,14 +17,13 @@ export const useSetGoal = () => {
 
        const targetValueKg = parseFloat(targetValue); 
        if (!targetValueKg || isNaN(targetValueKg) || targetValueKg <= 0) {
+          setTargetValue(targetValueKg)
          setError("Please enter a valid positive target value in kilograms.");
        }
 
-      const formData = new FormData();
-      formData.append('target_value_kg', targetValueKg);
-
+      const newGoal= {"target_value_kg": targetValue}
       try {
-          await wasteApi.postGoal(targetValueKg);
+          await wasteApi.postGoal(newGoal);
           setLoading(false);
           setSuccess("Goal set successfully"); 
       } catch (error) {
