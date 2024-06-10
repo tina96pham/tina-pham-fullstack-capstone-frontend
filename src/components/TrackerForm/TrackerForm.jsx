@@ -87,7 +87,7 @@ function TrackerForm({setFormOpen}) {
             disabled={loading}
           >
             <p className=" progress-form__btn-text">
-              {loading ? "Uploading..." : "Set New Goal"}
+              {loading ? "Uploading..." : "Add Record"}
             </p>
           </button>
         </div>

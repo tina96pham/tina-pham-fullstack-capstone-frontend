@@ -45,10 +45,10 @@ export const useSetGoal = () => {
 
 export const useTrackProgress = () => {
   const [record, setRecord] = useState({
-    "date": "",
-    "productType": "",
-    "productName": "",
-    "quantity": null,
+    date: "",
+    productType: "",
+    productName: "",
+    quantity: null,
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -87,7 +87,7 @@ export const useTrackProgress = () => {
     try {
       await wasteApi.postRecord(newRecord);
       setLoading(false);
-      setSuccess("Goal set successfully");
+      setSuccess("Record upload successfully");
     } catch (error) {
       setLoading(false);
       setError("Failed to upload. Please try again.");

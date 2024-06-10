@@ -48,19 +48,7 @@
       width: 100%;
     }
    
-    &__search{
-      width: 100%;
-      border: 1px solid $secondary-slate;
-      border-radius: 6px;
-      padding : 0.25rem;
-      @include flex(flex-start, center);
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
-    &__search-icon{
-      width: 1.5rem;
-      height: 1.5rem;
-    }
+    
  
     &__subheader{
       width: 100%;

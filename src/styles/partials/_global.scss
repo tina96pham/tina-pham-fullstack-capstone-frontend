@@ -9,11 +9,8 @@ body {
   font-family: $font-primary, "Open-sans";
   color: $primary-graphite;
   min-height: 100vh;
-  display: flex;
+  @include flex(flex-start, space-between);
   flex-direction: column;
-  position: relative;
-  // @include flex(space-between, center);
-  // flex-direction: column;
 }
 h1{
   @include font(1.5rem, 2rem, 700);
@@ -63,7 +60,9 @@ input {
   border-radius: 6px;
   padding : 0.25rem;
   @include flex(flex-start, center);
+  flex-direction: column;
   gap: 1rem;
+
 }
 select {
   height: 1.5rem;

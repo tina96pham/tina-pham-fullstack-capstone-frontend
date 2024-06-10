@@ -11,11 +11,13 @@ function App() {
   return (
     <BrowserRouter className="App">
       <Headers/>
-      <Routes>
-        <Route path="/" element={<HomePage/>}/>
-        <Route path="/progress" element={<MyProgressPage/>}/>
-        <Route path="/goal" element={<ActionPage/>}/>
-      </Routes>
+      <div className="content-wrapper">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/progress" element={<MyProgressPage />} />
+          <Route path="/goal" element={<ActionPage />} />
+        </Routes>
+      </div>
       <Footer className="footer"/>
      
     </BrowserRouter>

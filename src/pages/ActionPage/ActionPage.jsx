@@ -1,8 +1,8 @@
 import "./ActionPage.scss";
 import GoalSettingForm from "../../components/GoalSettingForm/GoalSettingForm";
 import TrackerForm from "../../components/TrackerForm/TrackerForm";
-import searchIcon from "../../assets/icons/search.png";
 import { useState } from "react";
+import SearchBar from "../../components/SearchBar/SearchBar";
 
 function ActionPage() {
   const[formOpen, setFormOpen] = useState(false)
@@ -18,14 +18,8 @@ function ActionPage() {
             trash, we can create a cleaner, healthier environment for ourselves
             and future generations.
           </p>
-          <form className="action-page__search">
-            <img
-              className="action-page__search-icon"
-              src={searchIcon}
-              alt="Search icon"
-            />
-            <span>Enter a waste product</span>
-          </form>
+          <SearchBar/>
+         
           <button className="action-page__btn" onClick={()=>{setFormOpen(true)}}>
             <p className="action-page__btn-text">Track my habit</p>
           </button>

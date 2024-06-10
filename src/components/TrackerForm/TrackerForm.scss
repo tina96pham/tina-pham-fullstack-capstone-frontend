@@ -58,7 +58,7 @@
     @include flex(center, center);
     width: 40%;
     background-color: white;
-    border: 2px solid  $secondary-purple;
+    border: 2px solid  $light-pink;
   }
   &__submit{
     @include button-styling;

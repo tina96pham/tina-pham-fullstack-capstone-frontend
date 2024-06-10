@@ -6,6 +6,7 @@ function InstructionModal (){
     <div className="instruction-modal">
       
       
+      
     </div>
   )
 }
