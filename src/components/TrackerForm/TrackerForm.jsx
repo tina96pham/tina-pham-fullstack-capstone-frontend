@@ -1,20 +1,26 @@
 import "./TrackerForm.scss";
 import { useTrackProgress } from "../../utils/useFormHandler";
+import { useState } from "react";
 
-function TrackerForm() {
-  const {  record,
+function TrackerForm({setFormOpen}) {
+  const {
+    record,
     success,
     loading,
     error,
     handleRecordInput,
-    handleRecordSubmit } = useTrackProgress();
-  console.log(record);
+    handleRecordSubmit,
+  } = useTrackProgress();
+
   return (
     <>
+      <h2 className="form__header">
+        Enter your waste info to keep track of your habit
+      </h2>
       <form className="progress-form" onSubmit={handleRecordSubmit}>
         <div className="progress-form__container">
-          <label htmlFor="date" >
-            <h3>Entry Date:</h3>
+          <label className="progress-form__label" htmlFor="date">
+            <p className="progress-form__label">Entry Date:</p>
           </label>
           <input
             className="progress-form__input"
@@ -27,9 +33,10 @@ function TrackerForm() {
         </div>
         <div className="progress-form__container">
           <label className="progress-form__label" htmlFor="productType">
-            <h3> Waste Type:</h3>
+            <p className="progress-form__label"> Waste Type:</p>
           </label>
           <select
+            className="progress-form__input"
             id="productType"
             name="productType"
             value={record.productType}
@@ -46,7 +53,7 @@ function TrackerForm() {
         </div>
         <div className="progress-form__container">
           <label className="progress-form__label" htmlFor="productName">
-            <h3>Product:</h3>
+            <p className="progress-form__label">Product:</p>
           </label>
           <input
             className="progress-form__input"
@@ -58,8 +65,8 @@ function TrackerForm() {
           />
         </div>
         <div className="progress-form__container">
-          <label htmlFor="quantity">
-            <h3>Quantity:</h3>
+          <label className="progress-form__label" htmlFor="quantity">
+            <p className="progress-form__label">Quantity:</p>
           </label>
           <input
             className="progress-form__input"
@@ -70,17 +77,30 @@ function TrackerForm() {
             onChange={handleRecordInput}
           />
         </div>
-        <button className="progress-form__btn" type="submit" disabled={loading}>
-          <p className=" progress-form__btn-text">
-            {loading ? "Uploading..." : "Set New Goal"}
-          </p>
-        </button>
+        <div className="progress-form__btn-container">
+          <button className="progress-form__cancel" onClick={()=>{setFormOpen(false)}}>
+            <p className=" progress-form__btn-text ">Cancel</p>
+          </button>
+          <button
+            className="progress-form__submit"
+            type="submit"
+            disabled={loading}
+          >
+            <p className=" progress-form__btn-text">
+              {loading ? "Uploading..." : "Set New Goal"}
+            </p>
+          </button>
+        </div>
       </form>
       {error && (
-        <div className="progress-form__msg progress-form__msg--error">{error}</div>
+        <div className="progress-form__msg progress-form__msg--error">
+          {error}
+        </div>
       )}
       {success && (
-        <div className="progress-form__msg progress-form__msg--success">{success}</div>
+        <div className="progress-form__msg progress-form__msg--success">
+          {success}
+        </div>
       )}
     </>
   );

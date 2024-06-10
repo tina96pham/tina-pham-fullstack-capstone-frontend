@@ -2,8 +2,10 @@ import "./ActionPage.scss";
 import GoalSettingForm from "../../components/GoalSettingForm/GoalSettingForm";
 import TrackerForm from "../../components/TrackerForm/TrackerForm";
 import searchIcon from "../../assets/icons/search.png";
+import { useState } from "react";
 
 function ActionPage() {
+  const[formOpen, setFormOpen] = useState(false)
   return (
     <div className="action-page">
       <div className="action-page__cta">
@@ -24,14 +26,14 @@ function ActionPage() {
             />
             <span>Enter a waste product</span>
           </form>
-          <button className="action-page__btn">
+          <button className="action-page__btn" onClick={()=>{setFormOpen(true)}}>
             <p className="action-page__btn-text">Track my habit</p>
           </button>
         </div>
       </div>
-      <div>
-        <TrackerForm />
-      </div>
+      { formOpen &&
+        <TrackerForm setFormOpen={setFormOpen} />
+      }
       <div className="action-page__goal-setter">
         <h2 className="action-page__header">✨Goal Setter✨</h2>
         <div className="action-page__action-container">

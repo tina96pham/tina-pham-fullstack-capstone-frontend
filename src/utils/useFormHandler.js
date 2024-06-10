@@ -76,7 +76,6 @@ export const useTrackProgress = () => {
       setError("Quantity must be a positive number.");
       return;
     }
-
    
     const newRecord= {
       "date": record.date,
