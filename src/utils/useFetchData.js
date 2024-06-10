@@ -30,16 +30,20 @@ export const useFetchWasteInfo = () => {
 
 // Get Product Info
 export const useSearchProducts = () => {
-  const wasteApi = useMemo(() => new WasteApi(), []); 
+  const wasteApi = useMemo(() => new WasteApi(), []);
 
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const fetchData = useCallback(async () => {
+  const handleSearchInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const fetchData = useCallback(async (searchTerm) => {
     if (searchTerm.trim() === "") {
-      setSearchResults([]); 
+      setSearchResults([]);
       return;
     }
 
@@ -55,11 +59,11 @@ export const useSearchProducts = () => {
     } finally {
       setIsLoading(false);
     }
-  }, [searchTerm, wasteApi]); 
+  }, [searchTerm, wasteApi]);
 
   useEffect(() => {
-    fetchData();
-  }, [fetchData]); 
+    fetchData(searchTerm);
+  }, [fetchData, searchTerm]);
 
   return {
     searchTerm,
@@ -67,6 +71,7 @@ export const useSearchProducts = () => {
     searchResults,
     isLoading,
     error,
+    handleSearchInputChange,
   };
 };
 export function useFetchRecords() {
@@ -108,3 +113,4 @@ export function useFetchRecords() {
 
   return { recordData, loading, error };
   }
+

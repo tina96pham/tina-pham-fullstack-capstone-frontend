@@ -1,0 +1,36 @@
+@use "../../styles/partials/color" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/typography" as *;
+
+$d3_cardColors: (
+  #FF5733, // Red-ish
+  #3498DB, // Blue
+  #2ECC71, // Green
+  #F1C40F, // Yellow
+  #9B59B6, // Purple
+  #E74C3C, // Red
+  #34495E  // Dark Grey
+);
+
+// Card Base Styles (DRY Approach)
+.card {
+  border: 1px solid $secondary-border-color;
+  width: 75%;
+  height: 10rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  @include flex(flex-start, center);
+  flex-direction: column;
+
+  @include tablet {
+    width: 40%;
+  }
+
+  // Dynamically Apply Colors (Cleaner Loop)
+  @for $i from 1 through length($d3_cardColors) {
+    &-#{$i} {
+      background-color: nth($d3_cardColors, $i);
+    }
+  }
+}

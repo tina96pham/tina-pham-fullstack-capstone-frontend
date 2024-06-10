@@ -19,7 +19,6 @@ function ActionPage() {
             and future generations.
           </p>
           <SearchBar/>
-         
           <button className="action-page__btn" onClick={()=>{setFormOpen(true)}}>
             <p className="action-page__btn-text">Track my habit</p>
           </button>

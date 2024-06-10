@@ -81,7 +81,7 @@ export const useTrackProgress = () => {
       "date": record.date,
       "productType": record.productType,
       "productName": record.productName,
-      "quantity": parseInt(record.quantity),
+      "quantity": parseInt(record.quantity)
     }
 
     try {
@@ -104,3 +104,6 @@ export const useTrackProgress = () => {
     handleRecordSubmit,
   };
 };
+
+
+
