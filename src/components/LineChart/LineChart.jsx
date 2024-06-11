@@ -1,25 +1,33 @@
 import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
+import { timeFormat } from "d3-time-format";
 import "./LineChart.scss";
 
 function LineChart({ type, data }) {
   const svgRef = useRef();
 
   useEffect(() => {
-    // Set the dimensions and margins of the graph
-    const margin = { top: 20, right: 30, bottom: 30, left: 40 },
-      width = 150 - margin.left - margin.right,
-      height = 100 - margin.top - margin.bottom;
+    const margin = { top: 5, right: 10, bottom: 5, left: 10 },
+      width = 200 - margin.left - margin.right,
+      height = 200 - margin.top - margin.bottom;
+    const svgWidth = width + margin.left + margin.right;
+    const svgHeight = height + margin.top + margin.bottom;
 
     d3.select(svgRef.current).selectAll("*").remove();
 
-    const svg = d3
-      .select(svgRef.current)
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-      .append("g")
-      .attr("transform", `translate(${margin.left}, ${margin.top})`);
+    const formatMonth = timeFormat("%b");
 
+    const svg = d3
+    .select(svgRef.current)
+    .style("position", "relative") 
+    .style("z-index", "1") 
+    .style("display", "block") 
+    .style("width", "100%") 
+    .style("height", "100%") 
+    .attr("viewBox", `0 0 ${svgWidth} ${svgHeight}`) 
+    .attr("preserveAspectRatio", "xMinYMin")
+    .append("g")
+    .attr("transform", `translate(${margin.left}, ${margin.top})`);
     const x = d3
       .scaleTime()
       .domain(d3.extent(data, (d) => d.date))
@@ -35,18 +43,24 @@ function LineChart({ type, data }) {
       .line()
       .x((d) => x(d.date))
       .y((d) => y(d.weight))
-      .curve(d3.curveCatmullRom.alpha(0.5));
+      .curve(d3.curveBasis);
 
     svg
       .append("path")
       .datum(data)
       .attr("fill", "none")
-      .attr("stroke", "steelblue")
+      .attr("stroke", "#FF6961")
       .attr("stroke-width", 2)
       .attr("d", line);
 
     // Create the cursor elements
-    const focus = svg.append("g").style("display", "none");
+    const focus = svg
+      .append("g")
+      .style("display", "none")
+      .style("position", "relative")
+      .style("z-index", "2")
+      .attr("stroke", "#5C667E")
+      .attr("fill", "white");
 
     focus
       .append("line")
@@ -64,7 +78,7 @@ function LineChart({ type, data }) {
 
     focus.append("text").attr("x", 15).attr("dy", ".31em");
 
-    // Add a rect to capture mouse events
+    // Add a rect to capture mouse events to show month
     svg
       .append("rect")
       .attr("width", width)
@@ -79,20 +93,31 @@ function LineChart({ type, data }) {
         const mouseX = d3.pointer(event, this)[0];
         const x0 = x.invert(mouseX);
         const i = bisectDate(data, x0, 1);
-        const d0 = data[i - 1];
-        const d1 = data[i];
-        const d = x0 - d0.date > d1.date - x0 ? d1 : d0;
-        focus.attr("transform", `translate(${x(d.date)},${y(d.weight)})`);
-        focus.select("text").text(` ${d.weight} kg`);
-        focus.select(".x-hover-line").attr("y2", height - y(d.weight));
-        focus.select(".y-hover-line").attr("x2", -x(d.date));
+
+        // Ensure d0 and d1 are defined
+        if (i > 0 && i < data.length) {
+          const d0 = data[i - 1];
+          const d1 = data[i];
+          const d = x0 - d0.date > d1.date - x0 ? d1 : d0;
+          focus.attr("transform", `translate(${x(d.date)},${y(d.weight)})`);
+          focus.select("text").text(`${formatMonth(d.date)}: ${d.weight} kg`);
+          focus.select(".x-hover-line").attr("y2", height - y(d.weight));
+          focus.select(".y-hover-line").attr("x2", -x(d.date));
+        }
       });
   }, [data]);
 
+  const totalWeight = d3.sum(data, (d) => d.weight);
   return (
     <div className="card">
-      <h2>{type}</h2>
-      <svg ref={svgRef}></svg>
+      <h2 className="card__header">{type}</h2>
+      <div className="card__subheader">
+        {totalWeight} kg
+        <p>Up-to-date-total:</p>
+      </div>
+      <div className="card__chart">
+        <svg ref={svgRef}></svg>
+      </div>
     </div>
   );
 }

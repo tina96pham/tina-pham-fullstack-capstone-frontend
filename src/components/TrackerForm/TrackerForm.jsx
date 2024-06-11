@@ -1,6 +1,5 @@
 import "./TrackerForm.scss";
 import { useTrackProgress } from "../../utils/useFormHandler";
-import { useState } from "react";
 
 function TrackerForm({setFormOpen}) {
   const {

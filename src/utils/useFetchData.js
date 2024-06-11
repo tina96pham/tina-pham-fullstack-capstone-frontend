@@ -28,53 +28,8 @@ export const useFetchWasteInfo = () => {
   return { wasteData, loading, error };
 };
 
-// Get Product Info
-export const useSearchProducts = () => {
-  const wasteApi = useMemo(() => new WasteApi(), []);
 
-  const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
-
-  const handleSearchInputChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
-  const fetchData = useCallback(async (searchTerm) => {
-    if (searchTerm.trim() === "") {
-      setSearchResults([]);
-      return;
-    }
-
-    setIsLoading(true);
-    setError(null);
-
-    try {
-      const fetchedData = await wasteApi.searchProducts(searchTerm);
-      setSearchResults(fetchedData);
-    } catch (error) {
-      setError(`Unable to search for "${searchTerm}": ${error.message}`);
-      console.error("Error fetching data:", error);
-    } finally {
-      setIsLoading(false);
-    }
-  }, [searchTerm, wasteApi]);
-
-  useEffect(() => {
-    fetchData(searchTerm);
-  }, [fetchData, searchTerm]);
-
-  return {
-    searchTerm,
-    setSearchTerm,
-    searchResults,
-    isLoading,
-    error,
-    handleSearchInputChange,
-  };
-};
-export function useFetchRecords() {
+export const useFetchRecords=() => {
   const wasteApi = useMemo(() => new WasteApi(), []); 
   const [recordData, setRecordData] = useState([]);
   const [loading, setLoading] = useState(true); 
@@ -113,4 +68,42 @@ export function useFetchRecords() {
 
   return { recordData, loading, error };
   }
+
+
+export const useSearch = () => {
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const wasteApi = new WasteApi();
+
+  const handleSearch = async () => {
+    setIsLoading(true);
+    setError(null);
+    try {
+      const data = await wasteApi.searchProduct(query);
+      setResults(data);
+    } catch (error) {
+      setError(error);
+      console.error('Error fetching search results:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    handleSearch();
+  };
+
+  return {
+    query,
+    setQuery,
+    results,
+    isLoading,
+    error,
+    handleSearchSubmit
+  };
+};
+
 

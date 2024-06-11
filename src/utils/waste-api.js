@@ -26,7 +26,7 @@ class WasteApi {
   }
 
   // Get Product Waste Search Info
-  async searchProducts(search) {
+  async searchProduct(search) {
     try {
       const response = await axios.get(
         `${this.baseUrl}/api/products?s=${search}`
@@ -45,12 +45,26 @@ class WasteApi {
       console.error(`Unable to post new goal: ${error}`);
     }
   }
+  // async postRecord(newRecord) {
+  //   try {
+  //     const response = await axios.post(`${this.baseUrl}/api/records`, JSON.stringify(newRecord), {
+  //       headers: {
+  //         'Content-Type': 'application/json'
+  //       }
+  //     });
+  //     return response.data;
+  //   } catch (error) {
+  //     console.error(`Unable to post new record: ${error}`);
+  //     throw error; 
+  //   }
+  // }
+  
   async postRecord(newRecord) {
     try {
       const response = await axios.post(`${this.baseUrl}/api/records`, newRecord);
       return response.data;
     } catch (error) {
-      console.error(`Unable to post new goal: ${error}`);
+      console.error(`Unable to post new record: ${error}`);
     }
   }
 }

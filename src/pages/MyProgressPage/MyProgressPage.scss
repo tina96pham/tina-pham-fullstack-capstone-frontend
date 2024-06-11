@@ -28,12 +28,13 @@
     width: 100%;
     @include flex(space-between, center);
     gap: 1rem;
+    padding: 2rem 0;
     flex-direction: column;
-    border: 1px solid red;
     @include tablet{
       @include flex(center, center);
       flex-direction: row;
       flex-wrap: wrap;
+  
 
     }
     }

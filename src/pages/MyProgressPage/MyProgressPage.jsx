@@ -1,9 +1,8 @@
 import "./MyProgressPage.scss";
-import StackBarChart from "../../components/StackBarChart/StackBarChart";
 import { useFetchRecords } from "../../utils/useFetchData";
 import Loading from "../../components/Loading/Loading";
 import ChartCard from "../../components/ChartCard/ChartCard";
-import { useState, useEffect, useMemo } from "react";
+import { useState, useMemo } from "react";
 
 function MyProgressPage() {
   const { recordData, loading } = useFetchRecords();

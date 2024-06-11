@@ -5,6 +5,6 @@
 
 .waste-type{
   @include flex(center, center);
-  @include global-padding;
+  padding: 1rem 2rem 5rem 2rem;
   
 }

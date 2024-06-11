@@ -9,8 +9,8 @@ body {
   font-family: $font-primary, "Open-sans";
   color: $primary-graphite;
   min-height: 100vh;
-  @include flex(flex-start, space-between);
-  flex-direction: column;
+  // @include flex(flex-start, space-between);
+  // flex-direction: column;
 }
 h1{
   @include font(1.5rem, 2rem, 700);
