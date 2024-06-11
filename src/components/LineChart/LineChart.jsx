@@ -18,16 +18,16 @@ function LineChart({ type, data }) {
     const formatMonth = timeFormat("%b");
 
     const svg = d3
-    .select(svgRef.current)
-    .style("position", "relative") 
-    .style("z-index", "1") 
-    .style("display", "block") 
-    .style("width", "100%") 
-    .style("height", "100%") 
-    .attr("viewBox", `0 0 ${svgWidth} ${svgHeight}`) 
-    .attr("preserveAspectRatio", "xMinYMin")
-    .append("g")
-    .attr("transform", `translate(${margin.left}, ${margin.top})`);
+      .select(svgRef.current)
+      .style("position", "relative")
+      .style("z-index", "1")
+      .style("display", "block")
+      .style("width", "100%")
+      .style("height", "100%")
+      .attr("viewBox", `0 0 ${svgWidth} ${svgHeight}`)
+      .attr("preserveAspectRatio", "xMinYMin")
+      .append("g")
+      .attr("transform", `translate(${margin.left}, ${margin.top})`);
     const x = d3
       .scaleTime()
       .domain(d3.extent(data, (d) => d.date))
@@ -53,7 +53,6 @@ function LineChart({ type, data }) {
       .attr("stroke-width", 2)
       .attr("d", line);
 
-    // Create the cursor elements
     const focus = svg
       .append("g")
       .style("display", "none")
@@ -78,7 +77,6 @@ function LineChart({ type, data }) {
 
     focus.append("text").attr("x", 15).attr("dy", ".31em");
 
-    // Add a rect to capture mouse events to show month
     svg
       .append("rect")
       .attr("width", width)
@@ -94,7 +92,6 @@ function LineChart({ type, data }) {
         const x0 = x.invert(mouseX);
         const i = bisectDate(data, x0, 1);
 
-        // Ensure d0 and d1 are defined
         if (i > 0 && i < data.length) {
           const d0 = data[i - 1];
           const d1 = data[i];

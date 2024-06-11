@@ -73,12 +73,13 @@ export const useFetchRecords=() => {
 export const useSearch = () => {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const wasteApi = new WasteApi();
 
-  const handleSearch = async () => {
-    setIsLoading(true);
+  const handleSearchSubmit = async (event) => {
+    event.preventDefault();
+    setLoading(true);
     setError(null);
     try {
       const data = await wasteApi.searchProduct(query);
@@ -87,20 +88,33 @@ export const useSearch = () => {
       setError(error);
       console.error('Error fetching search results:', error);
     } finally {
-      setIsLoading(false);
+      setLoading(false);
     }
   };
 
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-    handleSearch();
+  /*
+  const handleSearch = async () => {
+    setIsLoading(true);
+    setError(null);
+    try {
+      const data = await wasteApi.searchProduct(query);
+      console.log(data);
+      setResults(data);
+      console.log(results)
+    } catch (error) {
+      setError(error);
+      console.error('Error fetching search results:', error);
+    } finally {
+      setIsLoading(false);
+    }
   };
+*/
 
   return {
     query,
     setQuery,
     results,
-    isLoading,
+    loading,
     error,
     handleSearchSubmit
   };
