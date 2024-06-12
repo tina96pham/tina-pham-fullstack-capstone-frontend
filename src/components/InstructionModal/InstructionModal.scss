@@ -2,3 +2,110 @@
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/mixin" as *;
 @use "../../styles/partials/typography" as *;
+.modal {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 10;
+  overflow-y: hidden;
+  @include tablet {
+    padding-top: 12.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__popup {
+    background-color: white;
+    @include flex(flex-start, space-between);
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem 1rem;
+    @include tablet {
+      @include modal;
+      height: 30rem;
+      max-width: 100%;
+    }
+    @include desktop {
+      height: 30rem;
+      max-width: 50%;
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+  }
+
+  &__header {
+    padding: 1rem 0;
+    margin: 0;
+    width: 100%;
+    color: $primary-pink;
+    @include tablet {
+      padding: 0 0 1.5rem;
+    }
+  }
+  &__subheader {
+    padding:0;
+    margin: 0.75rem;
+    @include font(0.85rem, 1.25rem, 700);
+    @include tablet {
+      @include font(0.95rem, 1.375rem, 700);
+    }
+    &--stats{
+        padding: 0 1rem;
+        @include tablet{
+            padding: 0 2rem;
+        }
+        
+    }
+  }
+  &__contribution{
+    width: 100%;
+    text-align: center;
+  }
+
+  &__text {
+    @include font(0.85rem, 1.25rem, 400);
+    margin: 0.25rem;
+    width: 100%;
+    @include tablet {
+      @include font(0.875rem, 1.375rem, 400);
+      max-width: 85%;
+    }
+  }
+  &__stats{
+    @include flex(center, center);
+    border: 1px solid $secondary-border-color;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+   
+  }
+  &__high{
+    padding: 0.5rem;
+    width: 2rem;
+    text-align: center;
+    border: 1px solid $primary-light-green;
+    border-radius: 3rem;
+    background-color: $high;
+  }
+  &__low{
+    padding: 0.5rem;
+    width: 2rem;
+    text-align: center;
+    border: 1px solid $opaque-green;
+    border-radius: 3rem;
+    background-color: $low;
+    
+
+
+  }
+
+}

@@ -55,3 +55,17 @@
   border: 1px solid $light-pink;
 
 }
+@mixin modal {
+  display: flex;
+  @include tablet {
+    box-shadow: 0 0 4px $secondary-cloud;
+    border-radius: 0.25rem;
+    padding: 1rem 1.5rem 3rem 4rem;
+    margin: 0 2.5rem;
+    background-color: white;
+  }
+  @include desktop {
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 4.5rem;
+  }
+}
