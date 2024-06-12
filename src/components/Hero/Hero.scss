@@ -3,6 +3,17 @@
 @use "../../styles/partials/mixin" as *;
 @use "../../styles/partials/typography" as *;
 
+.hero-section{
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid $secondary-cloud;
+  box-shadow: 5px 5px 5px $secondary-cloud;
+  &__img{
+    width:100vw;
+  }
+}
+
+
 .hero {
   @include global-padding;
   @include flex(space-between, center);

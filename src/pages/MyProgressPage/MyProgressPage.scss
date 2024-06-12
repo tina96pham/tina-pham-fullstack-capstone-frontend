@@ -40,4 +40,12 @@
     }
   }
  
+.swipper-wrapper{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 6rem;
+  @include tablet{
 
+    margin-bottom: 0;
+  }
+}
