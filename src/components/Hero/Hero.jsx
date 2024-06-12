@@ -1,6 +1,6 @@
 import "./Hero.scss";
 import heroImage from "../../assets/images/EconomyCircular.gif";
-import hero from "../../assets/images/green_environment.png"
+import hero from "../../assets/images/green_environments.png"
 
 
 function Hero() {
