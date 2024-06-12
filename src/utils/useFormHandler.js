@@ -26,6 +26,7 @@ export const useSetGoal = () => {
       await wasteApi.postGoal(newGoal);
       setLoading(false);
       setSuccess("Goal set successfully");
+      setTargetValue("")
     } catch (error) {
       setLoading(false);
       setError("Failed to upload. Please try again.");
@@ -44,12 +45,13 @@ export const useSetGoal = () => {
 };
 
 export const useTrackProgress = () => {
-  const [record, setRecord] = useState({
+  const initialFormField= {
     date: "",
     productType: "",
     productName: "",
-    quantity: null,
-  });
+    quantity: "",
+  }
+  const [record, setRecord] = useState(initialFormField);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
@@ -61,6 +63,7 @@ export const useTrackProgress = () => {
       ...prevRecord,
       [name]: value,
     }));
+    console.log(record)
   };
 
   const handleRecordSubmit = async (e) => {
@@ -88,6 +91,7 @@ export const useTrackProgress = () => {
       await wasteApi.postRecord(newRecord);
       setLoading(false);
       setSuccess("Record upload successfully");
+      setRecord(initialFormField)
     } catch (error) {
       setLoading(false);
       setError("Failed to upload. Please try again.");
