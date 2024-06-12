@@ -8,7 +8,7 @@ function WasteTypeCard ({item}){
         <h2 class="info-card__title">{item.name}</h2>
     </div>
     <div class="info-card__info">
-        <p> {item.going_to_landfill} % of {item.name} go to landfill</p>
+        <p> {item.going_to_landfill}% of {item.name} go to landfill</p>
     </div>
 
       <p class="info-card__description">

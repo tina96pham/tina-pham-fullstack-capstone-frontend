@@ -83,7 +83,13 @@ export const useSearch = () => {
     setError(null);
     try {
       const data = await wasteApi.searchProduct(query);
-      setResults(data);
+      if (data.length === 0) {
+        setResults([]);
+        setError("No results found"); 
+      } else {
+        setResults(data);
+        setError(null); 
+      }
     } catch (error) {
       setError(error);
       console.error('Error fetching search results:', error);

@@ -1,44 +1,30 @@
 import "./SearchBar.scss";
 import searchIcon from "../../assets/icons/search.png";
 import { useSearch } from "../../utils/useFetchData";
-import Loading from "../Loading/Loading"
+import Loading from "../Loading/Loading";
+import { useState } from "react";
+import InstructionModal from "../InstructionModal/InstructionModal";
 
 const SearchBar = () => {
-  const {
-    query,
-    setQuery,
-    results,
-    loading,
-    error,
-    handleSearchSubmit
+  const { 
+    query, 
+    setQuery, 
+    results, 
+    loading, 
+    error, 
+    handleSearchSubmit 
   } = useSearch();
+  const [openItemId, setOpenItemId] = useState(null);
+
+  const handleItemClick = (productId) => {
+    setOpenItemId(productId === openItemId ? null : productId); 
+  };
 
 
-
-  let content;
-  if (error) {
-    content = (<p className="error">"{query}" did not match any fields.</p>);
-  } else if (loading) {
-    content = (<Loading />);
-  } else {
-    content = (
-      <ul className="warehouses__list">
-         {results.map((result, index) => (
-            <li key={index}>{result.productName}</li>
-          ))}
-      </ul>
-    );
-  }
-
-  
   return (
     <div>
       <form className="search" onSubmit={handleSearchSubmit}>
-        <img
-          className="search__icon"
-          src={searchIcon}
-          alt="Search icon"
-        />
+        <img className="search__icon" src={searchIcon} alt="Search icon" />
         <input
           className="search__input"
           type="text"
@@ -51,9 +37,23 @@ const SearchBar = () => {
       </form>
       {loading && <Loading />}
       {!loading && (
-        <ul>
-          {results.map((result, index) => (
-            <li key={index}>{result.productName}</li>
+        <ul className="search__list">
+          {results.map((result) => (
+            <li
+              className= "search__item"
+              key={result.productId}
+              id={result.productId}
+              onClick={() => handleItemClick(result.productId)}
+            >
+              {result.productName}
+            {openItemId === result.productId && (
+                <InstructionModal
+                  id={result.productId}
+                  data={result}
+                  handleModalClose={() => handleItemClick(null)}
+                />
+              )}
+            </li>
           ))}
         </ul>
       )}
@@ -61,6 +61,4 @@ const SearchBar = () => {
   );
 };
 
-
-
-export default SearchBar
+export default SearchBar;
