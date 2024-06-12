@@ -3,25 +3,34 @@
 @use "../../styles/partials/mixin" as *;
 @use "../../styles/partials/typography" as *;
 
-.search{
+.search {
   width: 100%;
   border: 1px solid $secondary-slate;
   border-radius: 6px;
-  padding : 0.25rem;
+  padding: 0.25rem;
   @include flex(flex-start, center);
   gap: 1rem;
   margin-bottom: 1rem;
 
-&__icon{
-  width: 1.5rem;
-  height: 1.5rem;
-}
-&__input{
-  width: 100%;
-  border: none;
-  background: none;
-  @include font(0.85rem, 1.5rem, 600);
-  color: $primary-graphite;
-
-}
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  &__input {
+    width: 100%;
+    border: none;
+    background: none;
+    @include font(0.85rem, 1.5rem, 600);
+    color: $primary-graphite;
+  }
+  &__list {
+    list-style-type: none;
+  }
+  &__item {
+    padding: 0.5rem 0.5rem;
+    border: 1px solid $secondary-cloud;
+    &:hover {
+      background-color: $light-pink;
+    }
+  }
 }
